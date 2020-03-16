@@ -4,17 +4,23 @@ using UnityEngine;
 
 public class PlayerBehaviour : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public Animator animator;
     void Start()
     {
         Debug.Log("Holi");
-        //this.GetComponent<Animator>().Play("Animations_Static.Run_Static");
-        //animator.GetComponent<EnemyScript>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        this.GetComponent<Animator>().Play("Animations_Static.Run_Static");
+        if (Input.GetKey("space"))
+        {
+            animator.SetBool("isMoving", true);
+        }
+        else
+        {
+            animator.SetBool("isMoving", false);
+        }
     }
 }
