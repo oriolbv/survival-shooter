@@ -38,7 +38,7 @@ public class PlayerBehaviour : MonoBehaviour
         if (groundPlane.Raycast(cameraRay, out rayLength))
         {
             Vector3 pointToLook = cameraRay.GetPoint(rayLength);
-            transform.LookAt(pointToLook);
+            transform.LookAt(new Vector3(pointToLook.x, transform.position.y, pointToLook.z));
         }
     }
 }
