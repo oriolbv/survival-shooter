@@ -7,11 +7,15 @@ public class PlayerBehaviour : MonoBehaviour
     public Animator animator;
 
     public float moveSpeed;
+
+    private Camera mainCamera;
     void Start()
     {
         animator = GetComponent<Animator>();
 
         moveSpeed = 3f;
+
+        mainCamera = FindObjectOfType<Camera>();
     }
 
     // Update is called once per frame
@@ -25,6 +29,16 @@ public class PlayerBehaviour : MonoBehaviour
         else
         {
             animator.SetBool("isMoving", false);
+        }
+
+        Ray cameraRay = mainCamera.ScreenPointToRay(Input.mousePosition);
+        Plane groundPlane = new Plane(Vector3.up, Vector3.zero);
+        float rayLength;
+
+        if (groundPlane.Raycast(cameraRay, out rayLength))
+        {
+            Vector3 pointToLook = cameraRay.GetPoint(rayLength);
+            transform.LookAt(pointToLook);
         }
     }
 }
