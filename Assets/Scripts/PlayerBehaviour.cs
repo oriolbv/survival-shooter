@@ -13,7 +13,7 @@ public class PlayerBehaviour : MonoBehaviour
     {
         animator = GetComponent<Animator>();
 
-        moveSpeed = 3f;
+        moveSpeed = 8f;
 
         mainCamera = FindObjectOfType<Camera>();
     }
