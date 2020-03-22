@@ -24,13 +24,20 @@ public class FSMZombie : MonoBehaviour
 
     private void Start()
     {
-        stateActual = stateStandby;
+        stateActual = statePursuePlayer;
     }
 
     private void Update()
     {
-        //agent.Warp(new Vector3(transform.position.x, transform.position.y, transform.position.z));
-        agent.destination = PlayerObject.transform.position;
+        if ((PlayerObject.transform.position - this.transform.position).sqrMagnitude < 15 * 15)
+        {
+            stateActual.ToStatePursuePlayer();
+        }
+        else
+        {
+            stateActual.ToStateStandby();
+        }
+        stateActual.UpdateState();
     }
 }
  
@@ -63,8 +70,8 @@ public class StatePursuePlayer : IStateZombie
 
     public void UpdateState()
     {
-        // Agent should pursue player
-        // fsm.agent.destination = fsm.PlayerObject.transform.position + new Vector3(2f, 0f, 0f);
+        // Zombie should pursue player
+        fsm.agent.destination = fsm.PlayerObject.transform.position;
     }
 }
 
@@ -87,7 +94,7 @@ public class StateStandby : IStateZombie
 
     public void UpdateState()
     {
-        // Agent should pursue enemy
-        // fsm.agent.destination = fsm.EnemyObject.transform.position + new Vector3(2f, 0f, 0f);
+        // Zombie will not move
+        fsm.agent.velocity = new Vector3(0f, 0f, 0f);
     }
 }
