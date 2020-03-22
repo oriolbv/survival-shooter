@@ -12,8 +12,6 @@ public class FSMZombie : MonoBehaviour
 
     [HideInInspector] public NavMeshAgent agent;
 
-    // [HideInInspector] public float playerActualPosition;
-
     public GameObject PlayerObject;
 
     private void Awake()
@@ -22,8 +20,6 @@ public class FSMZombie : MonoBehaviour
         stateStandby = new StateStandby(this);
 
         agent = GetComponent<NavMeshAgent>();
-
-        // playerActualPosition = PlayerObject.transform.position.x;
     }
 
     private void Start()
@@ -33,22 +29,8 @@ public class FSMZombie : MonoBehaviour
 
     private void Update()
     {
-        // if (PlayerObject.transform.position.x != playerActualPosition && stateActual != statePursuePlayer)
-        // {
-        //     // Player has changed its position
-        //     stateActual.ToStatePursuePlayer();
-        //     playerActualPosition = PlayerObject.transform.position.x;
-        // }
-        // else if (PlayerObject.transform.position.x == playerActualPosition && stateActual != statePursueEnemy)
-        // {
-        //     // Player has NOT changed its position
-        //     stateActual.ToStatePursueEnemy();
-        // }
-        // else
-        // {
-        //     stateActual.UpdateState();
-        //     playerActualPosition = PlayerObject.transform.position.x;
-        // }
+        //agent.Warp(new Vector3(transform.position.x, transform.position.y, transform.position.z));
+        agent.destination = PlayerObject.transform.position;
     }
 }
  

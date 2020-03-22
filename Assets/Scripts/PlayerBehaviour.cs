@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class PlayerBehaviour : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class PlayerBehaviour : MonoBehaviour
     public float moveSpeed;
 
     private Camera mainCamera;
+
+    private NavMeshAgent agent;
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -16,6 +19,8 @@ public class PlayerBehaviour : MonoBehaviour
         moveSpeed = 8f;
 
         mainCamera = FindObjectOfType<Camera>();
+
+        agent = GetComponent<NavMeshAgent>();
     }
 
     // Update is called once per frame
@@ -40,5 +45,6 @@ public class PlayerBehaviour : MonoBehaviour
             Vector3 pointToLook = cameraRay.GetPoint(rayLength);
             transform.LookAt(new Vector3(pointToLook.x, transform.position.y, pointToLook.z));
         }
+        agent.destination = transform.position;
     }
 }

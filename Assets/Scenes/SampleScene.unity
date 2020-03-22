@@ -120,7 +120,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 7bb7ea1fffbe9e242b3f34b07270d6e7, type: 2}
 --- !u!1001 &40887531
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -131,6 +131,22 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 82fa5e123900c464ea14c0753dc38631, type: 3}
       propertyPath: m_Name
       value: SA_Bld_Diner_Damaged_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 82fa5e123900c464ea14c0753dc38631, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 82fa5e123900c464ea14c0753dc38631, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 82fa5e123900c464ea14c0753dc38631, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 82fa5e123900c464ea14c0753dc38631, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 82fa5e123900c464ea14c0753dc38631, type: 3}
       propertyPath: m_LocalPosition.x
@@ -192,6 +208,22 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 633ca997228e0c14aaea4e1d41b6c808, type: 3}
       propertyPath: m_Name
       value: SA_Bld_Apartment_Damaged_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 633ca997228e0c14aaea4e1d41b6c808, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 633ca997228e0c14aaea4e1d41b6c808, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 633ca997228e0c14aaea4e1d41b6c808, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 633ca997228e0c14aaea4e1d41b6c808, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 633ca997228e0c14aaea4e1d41b6c808, type: 3}
       propertyPath: m_LocalPosition.x
@@ -406,6 +438,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2080452787615843689, guid: 0861768788a58d4478385a73ab86222b,
+        type: 3}
+      propertyPath: PlayerObject
+      value: 
+      objectReference: {fileID: 1220485690}
     - target: {fileID: 9187873722308035994, guid: 0861768788a58d4478385a73ab86222b,
         type: 3}
       propertyPath: m_Name
@@ -414,17 +451,17 @@ PrefabInstance:
     - target: {fileID: 9187873722308280062, guid: 0861768788a58d4478385a73ab86222b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 24.675238
+      value: 15.27
       objectReference: {fileID: 0}
     - target: {fileID: 9187873722308280062, guid: 0861768788a58d4478385a73ab86222b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.8
+      value: 0.92
       objectReference: {fileID: 0}
     - target: {fileID: 9187873722308280062, guid: 0861768788a58d4478385a73ab86222b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -44.06926
+      value: -5.13
       objectReference: {fileID: 0}
     - target: {fileID: 9187873722308280062, guid: 0861768788a58d4478385a73ab86222b,
         type: 3}
@@ -676,6 +713,22 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dd938844ff7284f4bb7895d5fb90913b, type: 3}
       propertyPath: m_Name
       value: SA_Bld_Building_Damaged_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dd938844ff7284f4bb7895d5fb90913b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dd938844ff7284f4bb7895d5fb90913b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: dd938844ff7284f4bb7895d5fb90913b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: dd938844ff7284f4bb7895d5fb90913b, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: dd938844ff7284f4bb7895d5fb90913b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1354,6 +1407,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: SA_Bld_Diner_Damaged_01
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 82fa5e123900c464ea14c0753dc38631, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 82fa5e123900c464ea14c0753dc38631, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 82fa5e123900c464ea14c0753dc38631, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 82fa5e123900c464ea14c0753dc38631, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 82fa5e123900c464ea14c0753dc38631, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.203457
@@ -1460,6 +1529,28 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!195 &1220485695
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1220485690}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &1302812509
 GameObject:
   m_ObjectHideFlags: 0
@@ -1478,7 +1569,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &1302812510
 BoxCollider:
@@ -1667,6 +1758,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!1 &1386028642 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9187873722308035994, guid: 0861768788a58d4478385a73ab86222b,
+    type: 3}
+  m_PrefabInstance: {fileID: 354696717}
+  m_PrefabAsset: {fileID: 0}
+--- !u!195 &1386028643
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1386028642}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &1721122142
 GameObject:
   m_ObjectHideFlags: 0
@@ -1833,6 +1952,22 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 633ca997228e0c14aaea4e1d41b6c808, type: 3}
       propertyPath: m_Name
       value: SA_Bld_Apartment_Damaged_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 633ca997228e0c14aaea4e1d41b6c808, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 633ca997228e0c14aaea4e1d41b6c808, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 633ca997228e0c14aaea4e1d41b6c808, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 633ca997228e0c14aaea4e1d41b6c808, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 633ca997228e0c14aaea4e1d41b6c808, type: 3}
       propertyPath: m_LocalPosition.x
